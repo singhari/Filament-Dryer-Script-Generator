@@ -31,7 +31,7 @@ setup(
     py_modules=["filament_dryer_script_generator"],
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/kforth/Filament-Dryer-Script-Generator",
+    url="https://github.com/singhari/Filament-Dryer-Script-Generator",
     version="0.2.2",
     zip_safe=False,
 )
