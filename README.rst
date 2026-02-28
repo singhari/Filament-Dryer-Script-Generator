@@ -29,14 +29,14 @@ Requirements
 Installation
 -------------------------------------
 
-``pip install git+https://github.com/kForth/Filament-Dryer-Script-Generator.git``
+``pip install git+https://github.com/singhari/Filament-Dryer-Script-Generator.git``
 
 Running the Script
 -------------------------------------
 
 Generate a file named "FilamentDryer-PLA.gcode" which dries for 240 minutes (4 hours) at 50 C:
 
-``filament_dryer_script_generator FilamentDryer-PLA.gcode 240 50 --bed --chamber``
+``filament_dryer_script_generator FilamentDryer-PLA.gcode 240 50 --bed --chamber --includeEvoStartEnd``
 
 General Usage:
 -------------------------------------
