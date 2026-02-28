@@ -87,8 +87,8 @@ def create_script(
     num_bytes = 0
 
     def write(*lines, newline=newline):
-        text = newline.join([e for e in lines if e is not None]).encode(encoding)
-        text += newline.encode(encoding)
+        text = newline.join([e for e in lines if e is not None]).encode("utf-8")
+        text += newline.encode("utf-8")
         handle.write(text)
         return len(text)
 
