@@ -14,7 +14,7 @@ __version__ = "0.2.2"
 __copyright__ = "Copyright 2022"
 __license__ = "AGPLv3"
 __scriptname__ = "Filament Dryer Gcode Script Generator"
-__url__ = "https://github.com/singhari/Filament-Dryer-GCode-Scripts"
+__url__ = "https://github.com/Team-7159-RoboRavens/Filament-Dryer-GCode-Scripts"
 
 CHIRPS = (
     (60, 100),  # 60Hz 100ms

@@ -29,7 +29,7 @@ Requirements
 Installation
 -------------------------------------
 
-``pip install git+https://github.com/singhari/Filament-Dryer-Script-Generator.git``
+``pip install git+https://github.com/Team-7159-RoboRavens/Filament-Dryer-Script-Generator.git``
 
 Running the Script
 -------------------------------------
