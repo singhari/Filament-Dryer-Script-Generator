@@ -118,28 +118,13 @@ def create_script(
         # num_bytes += write(startCode)
         startFile = open("/evoCode/EvoStartCode.gcode", "r")
         for line in startFile:
-            num_bytes += line
+            num_bytes += write(line)
         startFile.close()
 
-        """";APEX 1.8.8",
-            ";EVO",
-            ";NOZZLE: PRIMARY",
-            ";SIZE: 0.8mm",
-            ";MATERIAL: ABS",
-            ";QUALITY: PRECISE"
-            ";LAYER HEIGHT: 0.22mm"
-            ";WALLS: 1mm",
-            ";FILL: 29%"
-            ";PRINT SPEED: ?print_STANDARD?mm/s",
-            ";PRINT TEMPERATURE: 238C",
-            ";INITIAL BED TEMPERATURE: 124C",
-            ";SIZE: SMALL",
-            ";PRINT TIME: 23 minutes",
-            ";FILAMENT USED: 7.0g",
-            ";DATE: 01-26-2026",
-            ";START CODE",
-"""
+    print(use_bed)
+    print(use_chamber)
 
+    print(evo)
     # this will call a different file within the repo which is good bc they pip everything
 
     # Set target temperatures
@@ -185,7 +170,7 @@ def create_script(
     if evo:
         closeFile = open("/evoCode/EvoEndCode.gcode", "r")
         for line in startFile:
-          num_bytes += line
+          num_bytes += write(line)
         closeFile.close()
 
     return handle, num_bytes
